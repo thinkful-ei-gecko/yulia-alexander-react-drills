@@ -6,7 +6,7 @@ import sections from './STORE';
 
 // console.log(sections);
 
-ReactDOM.render(<App props={sections} />, document.getElementById('root'));
+ReactDOM.render(<App sections={sections} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

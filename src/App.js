@@ -8,7 +8,7 @@ import Accordion from './Accordion';
 function App(props) {
   return (
     <div className="App">
-      <Accordion>{props}</Accordion>
+      <Accordion sections={props.sections} />
     </div>
   );
 }
