@@ -5,14 +5,12 @@ class Accordion extends React.Component {
   constructor(props) {
     super(props)
      this.state = {
-       sectionClick: 0,
+       sectionClick: null,
      }
   }
 
   static defaultProps = {
-    sections: [
-      {title: '', content: ''}
-    ],
+    sections: [],
 }
 
 handleClick = (i) => {
@@ -32,13 +30,13 @@ handleClick = (i) => {
       </li>
       }
       return <li key={i}>
-      <button key={i} onClick={() => this.handleClick(i)}>{item.title}</button>
-    </li>
-    })
+        <button key={i} onClick={() => this.handleClick(i)}>{item.title}</button>
+      </li>
+      })
     return (
-      <ul>
-        {buttons}
-      </ul>
+    <ul>
+      {buttons}
+    </ul>
     )
   }
 }
